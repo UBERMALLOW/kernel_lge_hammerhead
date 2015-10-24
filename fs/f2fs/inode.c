@@ -384,7 +384,7 @@ out_clear:
 	if (fi->i_crypt_info)
 		f2fs_free_encryption_info(inode, fi->i_crypt_info);
 #endif
-	clear_inode(inode);
+	end_writeback(inode);
 }
 
 /* caller should call f2fs_lock_op() */
