@@ -21,7 +21,6 @@
 #include <linux/leds.h>
 #include <linux/pwm.h>
 #include <linux/err.h>
-#endif
 
 #include <asm/system_info.h>
 
