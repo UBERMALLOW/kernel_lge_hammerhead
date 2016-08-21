@@ -842,8 +842,7 @@ static int write_local_on_cmds(struct device *dev, const char *buf,
 			return -EINVAL;
 
 		if (val < 0 || val > 255) {
-			pr_err("%s: Invalid input data %u (0-255)\n",
-			       __func__, val);
+			pr_err("%s: Invalid input data %u (0-255)\n", __func__, val);
 			local_pdata = prev_local_data;
 			return -EINVAL;
 		}
